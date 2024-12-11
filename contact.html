@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kentucky Wildcats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact the Kentucky Wildcats Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="player-profile.html">Player Profiles</a></li>
+                <li><a href="game-schedule.html">Game Schedule</a></li>
+                <li><a href="fan-forum.html">Fan Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="email" name="contact" value="email">
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="contact" value="phone">
+            <label for="phone">Phone</label>
+            <br><br>
+
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Yes, please</label>
+            <input type="checkbox" id="offers" name="offers" value="yes">
+            <label for="offers">Yes, I want offers</label>
+            <br><br>
+
+            <label for="team">Favorite Team:</label>
+            <select id="team" name="team">
+                <option value="kentucky-wildcats">Kentucky Wildcats</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@kentuckywildcats.com">info@kentuckywildcats.com</a></p>
+    </footer>
+</body>
+</html>
